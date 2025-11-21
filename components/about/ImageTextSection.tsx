@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+// import { Button } from "./button";
 
 export default function ImageTextSection() {
     return (
@@ -21,6 +22,7 @@ export default function ImageTextSection() {
                             <h1 className="text-5xl font-semibold mt-0 text-purple-600">I AM USMAN <br></br>ALI</h1>
                         </div>
                         <h4 className="text-3xl font-semibold mt-4 text-purple-500">Software Developer </h4>
+                        {/* <Button className="" variant="default">click</Button> */}
                     </div>
 
                     {/* 2. IMAGE (RIGHT SIDE) */}
