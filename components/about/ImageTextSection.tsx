@@ -19,9 +19,9 @@ export default function ImageTextSection() {
                     <div className="w-full md:w-1/2 text-center md:text-left">
                         <div className="space-y-1">
                             <p className="text-4xl font-bold mb-0 text-white">Hi There! 👋</p>
-                            <h1 className="text-5xl font-semibold mt-0 text-purple-600">I AM USMAN <br></br>ALI</h1>
+                            <h1 className="text-5xl font-semibold mt-0 bg-gradient-to-r from-purple-400/70 to-blue-600/90 bg-clip-text text-transparent">I AM USMAN <br></br>ALI</h1>
                         </div>
-                        <h4 className="text-3xl font-semibold mt-4 text-purple-500">Software Developer </h4>
+                        <h4 className="text-3xl font-semibold mt-4 bg-gradient-to-r from-purple-400/70 to-blue-600/90 bg-clip-text text-transparent">Software Developer </h4>
                         {/* <Button className="" variant="default">click</Button> */}
                     </div>
 

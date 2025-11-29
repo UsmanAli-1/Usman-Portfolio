@@ -29,7 +29,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className="antialiased min-h-screen"
         style={{
-          backgroundImage: " conic-gradient(at top right, #02031aff 0%, #360f4dff 40%, #010824ff 66%, #020220ff 100%)",
+          background: "radial-gradient(ellipse at bottom right, rgba(50, 23, 51, 1) 0.001%, #0a132bff 100%)",
+          backgroundAttachment: "fixed",
         }}
       >
         <Header />
@@ -38,3 +39,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
+

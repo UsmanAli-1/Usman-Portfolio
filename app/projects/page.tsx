@@ -1,7 +1,11 @@
+import ProjectsIntro from "@/components/projects/projectsIntro";
+import ProjectsGrid from "@/components/projects/ProjectsGrid";
+
 export default function Projects() {
   return (
-    <div className="min-h-screen flex items-center justify-center text-white text-3xl">
-      Projects
-    </div>
+    <>
+      <ProjectsIntro />
+      <ProjectsGrid />
+    </>
   );
 }
