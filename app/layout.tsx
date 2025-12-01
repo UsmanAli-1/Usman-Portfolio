@@ -3,9 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
+import BackgroundDots from "@/components/BackgroundDots";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import { config  } from '@fortawesome/fontawesome-svg-core';
+import { config } from '@fortawesome/fontawesome-svg-core';
 import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
 config.autoAddCss = false;
 
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           backgroundAttachment: "fixed",
         }}
       >
+        <BackgroundDots />
         <Header />
         {children}
         <a
@@ -44,7 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           hover:bg-blue-600/70  z-50"
           title="Download Resume"
         >
-          <FontAwesomeIcon icon={faFileAlt } className="text-white text-md" />
+          <FontAwesomeIcon icon={faFileAlt} className="text-white text-md" />
         </a>
       </body>
     </html>

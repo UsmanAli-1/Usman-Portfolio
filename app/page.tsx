@@ -3,6 +3,7 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import ParticleGlobe from "@/components/ParticleGlobe";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCode,          // Code icon
@@ -25,7 +26,11 @@ export default function Home() {
         </div>
 
         {/* White div */}
-        <div className="w-full max-w-[80%] h-64 mx-auto mt-6 md:w-[30%] md:h-[400px] md:mt-6 bg-white"></div>
+        <div className="w-50 max-w-[80%] h-50 mx-auto mt-6 
+     md:w-80 md:h-80 md:mt-6 rounded-full overflow-hidden ">
+          <ParticleGlobe />
+        </div>
+
 
         {/* Subtext */}
         <div className="w-[300px] text-base text-white/60 leading-relaxed 
