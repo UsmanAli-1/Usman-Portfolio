@@ -36,7 +36,7 @@ export default function Home() {
 
 
         {/* Buttons */}
-        <div className="mt-6 flex flex-col gap-4 items-center w-full md:flex-row md:justify-center md:gap-6 md:mt-10 bm-0">
+        <div className="mt-6 flex flex-col gap-4 items-center w-full md:flex-row md:justify-center md:gap-6 md:mt-10 md:mb-6">
           {/* View My Work */}
           <Button
             asChild

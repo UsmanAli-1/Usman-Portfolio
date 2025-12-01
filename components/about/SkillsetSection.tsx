@@ -49,7 +49,7 @@ export default function SkillsetSection() {
             <Card className="w-full max-w-4xl mx-auto mt-12 border-none bg-tranparent  shadow-none">
 
                 <CardHeader>
-                    <CardTitle className="md:text-4xl text-2xl  font-bold text-center text-purple-600">
+                    <CardTitle className="md:text-4xl text-2xl font-bold text-center text-purple-600">
                         <strong className="text-white">Professional</strong> Skillset
                     </CardTitle>
                 </CardHeader>
