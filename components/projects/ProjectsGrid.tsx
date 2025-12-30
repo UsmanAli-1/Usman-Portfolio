@@ -6,23 +6,30 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+
 
 
 export default function ProjectsGrid() {
+    const [openVideo, setOpenVideo] = useState<string | null>(null);
+
+
     const projects = [
         {
             title: "Squad Security (In Process)",
-            description: "A Squad International Security Agency website build on Next.js and shadcn showcasing their Services , Clients , and company work to get more ...",
+            description: "A Squad Security Agency buisness website build on Next.js showcasing their Services , Clients , About , Contact us and handle forms connected to mail... ",
             image: "/images/projects/sq.png",
-            tech: ["Next.js", "Shadcn", "vercel"],
+            tech: ["Next.js", "Shadcn", "Vercel"],
             link: "https://squadsecurity.vercel.app/",
+            video: null,
         },
         {
             title: "Wearify FYP (In Process)",
             description: "A Virtual try-on project , its our fyp project and still in process , main tech stack we are using in (MongoDB Atlas , Express.js , Next.js , Node.js) and Python...",
             image: "/images/projects/wearify.png",
-            tech: ["MENN", "Shadcn", "Python" ,"vercel"],
+            tech: ["MENN", "Shadcn", "Python", "Vercel"],
             link: "https://wearify-4abq.vercel.app/",
+            video: null,
         },
         {
             title: "Hire Hunt ",
@@ -30,13 +37,7 @@ export default function ProjectsGrid() {
             image: "/images/projects/hire.png",
             tech: ["Php", "jQuery", "Html", "Css"],
             link: "https://hirehunt.free.nf/",
-        },
-        {
-            title: "SS Security Services",
-            description: "A security services website showcasing company work, services, and contact options for potential clients. Built with HTML, CSS, JavaScript, and jQuery.",
-            image: "/images/projects/ss.png",
-            tech: ["Html", "Css", "Javascript", "jQuery"],
-            link: "https://ss-securityservices.firebaseapp.com/",
+            video: null,
         },
         {
             title: "Bookify",
@@ -44,13 +45,31 @@ export default function ProjectsGrid() {
             image: "/images/projects/bookify.png",
             tech: ["Php", "jQuery", "Html", "Css"],
             link: "https://bookify.free.nf/",
+            video: null,
+        },
+        {
+            title: "SS Security Services",
+            description: "A security services website showcasing company work, services, and contact options for potential clients. Built with HTML, CSS, JavaScript, and jQuery.",
+            image: "/images/projects/ss.png",
+            tech: ["Html", "Css", "Javascript", "jQuery"],
+            link: "https://ss-securityservices.firebaseapp.com/",
+            video: null,
+        },
+        {
+            title: "Hungrify",
+            description: "Ai-Powered Restaurent suggestion web in which you can create your restaurent and our AI suggest you restaurent base on number of persons and budget.",
+            image: "/images/projects/hungrify.png",
+            tech: ["MERN", "Botpress", "APIs integrate"],
+            link: null,
+            video: "/images/hungrify.mp4",
         },
         {
             title: "Smart Shuttle Service ",
             description: "A full-stack web app for university shuttle services managing students , drivers, and admin operations. Built with React, Flask, Material-UI, and MariaDB.",
-            image: "/images/projects/iqra.png",
+            image: "/images/projects/student-dashboard.png",
             tech: ["React", "Flask", "AWS", "Material UI"],
             link: "https://smartshuttleservice.firebaseapp.com",
+            video: null,
         },
         {
             title: "Spotify Clone",
@@ -58,6 +77,7 @@ export default function ProjectsGrid() {
             image: "/images/projects/spotify.png",
             tech: ["Html", "Css", "Javascript", "Media Query"],
             link: "https://musicplayer-spotify-clone.web.app",
+            video: null,
         },
         {
             title: "Image Gallery",
@@ -65,7 +85,9 @@ export default function ProjectsGrid() {
             image: "/images/projects/Gallery.png",
             tech: ["Html", "Css", "Javascript"],
             link: "https://imagegalleryweb.web.app/",
+            video: null,
         },
+
     ];
 
     return (
@@ -109,18 +131,46 @@ export default function ProjectsGrid() {
                             </CardContent>
 
                             <CardFooter>
-                                <Button asChild className="w-full bg-gradient-to-r from-purple-500/60 to-blue-600/90 hover:bg-purple-700 text-black/60 my-2
-                                    transform transformation-all duration-300 hover:scale-105
-                                ">
-                                    <a href={proj.link} target="_blank">
-                                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="w-4 ml-2" />
-                                        Live Demo</a>
+                                <Button
+                                    className="w-full bg-gradient-to-r from-purple-500/60 to-blue-600/90 hover:bg-purple-700 text-black/60 my-2
+      transform transition-all duration-300 hover:scale-105"
+                                    onClick={() => {
+                                        if (proj.link) {
+                                            window.open(proj.link, "_blank");
+                                        } else if (proj.video) {
+                                            setOpenVideo(proj.video);
+                                        }
+                                    }}
+                                >
+                                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="w-4 mr-2" />
+                                    {proj.link ? "Live Demo" : "Watch Demo"}
                                 </Button>
                             </CardFooter>
+
                         </Card>
                     ))}
                 </div>
             </div>
+            {openVideo && (
+                <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80">
+                    <div className="relative w-[90%] top-87 md:top-0 max-w-3xl">
+                        <button
+                            onClick={() => setOpenVideo(null)}
+                            className="absolute -top-4 -right-4 bg-white text-black w-8 h-8 rounded-full flex items-center justify-center"
+                        >
+                            ✕
+                        </button>
+
+                        <video
+                            src={openVideo}
+                            controls
+                            autoPlay
+                            className="w-full max-h-[80vh] rounded-lg bg-black"
+                        />
+                    </div>
+                </div>
+            )}
+
         </section>
     );
 }
