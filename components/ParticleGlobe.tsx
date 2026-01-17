@@ -1,46 +1,56 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import Loader from "./Loader";
 
 export default function ParticleGlobe() {
-    const vantaRef = useRef<HTMLDivElement | null>(null);
-    const effectRef = useRef<any>(null);
+  const [loading, setLoading] = useState(true);
+  const vantaRef = useRef<HTMLDivElement | null>(null);
+  const effectRef = useRef<any>(null);
 
-    useEffect(() => {
-        async function loadVanta() {
-            // @ts-ignore
-            const NET = (await import("vanta/dist/vanta.net.min")).default;
-            // @ts-ignore
-            const THREE = await import("three");
+  useEffect(() => {
+    async function loadVanta() {
+      if (!vantaRef.current) return;
 
-            if (!effectRef.current) {
-                const vantaNet = NET({
-                    el: vantaRef.current!,
-                    THREE,
-                    points: 25,
-                    maxDistance: 15,
-                    spacing: 15,
-                    showDots: true,
-                    mouseControls: true,
-                    touchControls: true,
-                    gyroControls: false,
-                    minHeight: 100.0,
-                    minWidth: 100.0,
-                });
+        const NET = (await import("vanta/dist/vanta.net.min")).default;
+        const THREE = await import("three");
 
-                effectRef.current = vantaNet;
-            }
-        }
+      if (!effectRef.current) {
+        effectRef.current = NET({
+          el: vantaRef.current,
+          THREE,
+          points: 25,
+          maxDistance: 15,
+          spacing: 15,
+          showDots: true,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 100,
+          minWidth: 100,
+        });
 
-        loadVanta();
+        setLoading(false); // ✅ hide loader AFTER Vanta mounts
+      }
+    }
 
-        return () => {
-            if (effectRef.current) {
-                effectRef.current.destroy();
-                effectRef.current = null;
-            }
-        };
-    }, []);
+    loadVanta();
 
-    return <div ref={vantaRef} className="w-full h-full"></div>;
+    return () => {
+      if (effectRef.current) {
+        effectRef.current.destroy();
+        effectRef.current = null;
+      }
+    };
+  }, []);
+
+  return (
+    <>
+      {/* Vanta background (always mounted) */}
+      <div ref={vantaRef} className="w-full h-full" />
+
+      {/* Fixed loader overlay */}
+      {loading && <Loader />}
+    </>
+  );
 }
