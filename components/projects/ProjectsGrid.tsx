@@ -16,19 +16,19 @@ export default function ProjectsGrid() {
 
     const projects = [
         {
-            title: "Squad Security (In Process)",
+            title: "Wearify FYP (In Process)",
+            description: "A Virtual try-on project , user can signup & signin and get free 120 points , 40 points per image generate , Authentication & Authorization is done ...",
+            image: "/images/projects/werify2.png",
+            tech: ["MENN", "Shadcn", "Python", "Vercel" , "render"],
+            link: "https://wearify-mu.vercel.app/",
+            video: null,
+        },
+        {
+            title: "Squad Security ",
             description: "A Squad Security Agency buisness website build on Next.js showcasing their Services , Clients , About , Contact us and handle forms connected to mail... ",
             image: "/images/projects/sq.png",
             tech: ["Next.js", "Shadcn", "Vercel"],
             link: "https://squadsecurity.vercel.app/",
-            video: null,
-        },
-        {
-            title: "Wearify FYP (In Process)",
-            description: "A Virtual try-on project , user can signup & signin and get free 120 points , 40 points per image generate , Authentication & Authorization is done ...",
-            image: "/images/projects/werify2.png",
-            tech: ["MENN", "Shadcn", "Python", "Vercel" , "Railway"],
-            link: "https://wearify-mu.vercel.app/",
             video: null,
         },
         {

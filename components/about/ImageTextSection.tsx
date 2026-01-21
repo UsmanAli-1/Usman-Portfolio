@@ -22,7 +22,7 @@ export default function ImageTextSection() {
                             <p className="text-3xl md:text-4xl font-bold mb-0 text-white">Hi There! 👋</p>
                             <h1 className="text-4xl  md:text-5xl font-semibold mt-0 bg-gradient-to-r from-purple-400/70 to-blue-600/90 bg-clip-text text-transparent">I AM USMAN <br></br>ALI</h1>
                         </div>
-                        <h4 className="text-2xl md:text-3xl font-semibold mt-2 md:mt-4 bg-gradient-to-r from-purple-400/70 to-blue-600/90 bg-clip-text text-transparent">Software Developer </h4>
+                        <h4 className="text-2xl md:text-3xl font-semibold mt-2 md:mt-4 bg-gradient-to-r from-purple-400/70 to-blue-600/90 bg-clip-text text-transparent">Software Engineer </h4>
                     </div>
 
                     {/* 2. IMAGE (RIGHT SIDE) */}

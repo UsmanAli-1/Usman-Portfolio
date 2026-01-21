@@ -16,7 +16,7 @@ export default function CenteredIntroAndJourney() {
                         Hi Everyone, I am <strong>Usman Ali</strong> from Karachi, Pakistan.
                     </p>
                     <p className="text-lg text-center text-white">
-                        A final-year <strong>Computer Science</strong> student at Iqra University at Karachi.
+                        A <strong>Computer Science graduate</strong> from Iqra University at Karachi.
                     </p>
                     <p className="text-lg text-center text-white">
                         I am currently seeking new opportunities in the tech industry.
@@ -37,8 +37,9 @@ export default function CenteredIntroAndJourney() {
                 </CardHeader>
                 <CardContent className="space-y-4 ">
                     <p className="text-lg text-left text-white">
-                        I am a <strong>Junior Full-Stack Developer</strong> with <strong>6 months of experience</strong> and over 1 year of hands-on  <strong>web development experience</strong>, focused on building end-to-end web applications.
+                        I am a <strong>Software Engineer</strong> with <strong>6 months of professional experience</strong> and over <strong>one year of hands-on web development experience</strong>, focused on building scalable, end-to-end web applications.
                     </p>
+
                     <ul className="list-disc pl-8 space-y-2 text-white text-lg">
                         <li className="text-left">
                             **MENN Stack** (MongoDB, Express.js, Next, Node.js)
