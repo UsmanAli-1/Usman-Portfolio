@@ -39,7 +39,7 @@ export default function SkullInCircle() {
           enableZoom={false}
           enablePan={false}
           autoRotate
-          autoRotateSpeed={0.8}
+          autoRotateSpeed={4}
         />
       </Canvas>
     </div>
