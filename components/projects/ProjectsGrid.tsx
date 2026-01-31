@@ -20,10 +20,19 @@ export default function ProjectsGrid() {
             title: "Wearify FYP (In Process)",
             description: "A Virtual try-on project , user can signup & signin and get free 120 points , 40 points per image generate , Authentication & Authorization is done ...",
             image: "/images/projects/werify2.png",
-            tech: ["MENN", "Shadcn", "Python", "Vercel", "render"],
+            tech: ["MENN", "Python", "Vercel", "render"],
             link: "https://wearify-mu.vercel.app/",
             video: null,
         },
+        {
+            title: "Fitness Checker ML Project",
+            description: "ML project predicting fitness performance classes (A–D) using some fitness attributes trained on Korean military fitness dataset , deployed on streamlit ...",
+            image: "/images/projects/fitnessChecker.png",
+            tech: ["Python", "ML", "XGBoost", "Streamlit"],
+            link: "https://body-performance-ml.streamlit.app/",
+            video: null,
+        },
+
         {
             title: "Squad Security ",
             description: "A Squad Security Agency buisness website build on Next.js showcasing their Services , Clients , About , Contact us and handle forms connected to mail... ",
@@ -57,7 +66,7 @@ export default function ProjectsGrid() {
             video: null,
         },
         {
-            title: "Hungrify",
+            title: "Hungrify ~ Ai-Powered",
             description: "Ai-Powered Restaurent suggestion web in which you can create your restaurent and our AI suggest you restaurent base on number of persons and budget.",
             image: "/images/projects/hungrify.png",
             tech: ["MERN", "Botpress", "APIs integrate"],
@@ -102,7 +111,7 @@ export default function ProjectsGrid() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
                     {projects.map((proj, i) => (
                         <Animate key={i} type="fade-up">
-                            <Card  className="bg-[#0F172B] backdrop-blur-xl text-white border-white/20 shadow-xl py-0 pb-4 
+                            <Card className="bg-[#0F172B] backdrop-blur-xl text-white border-white/20 shadow-xl py-0 pb-4 
                          transform transition-all duration-300 hover:-translate-y-4
                         ">
 
