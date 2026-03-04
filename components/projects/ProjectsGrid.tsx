@@ -19,7 +19,7 @@ export default function ProjectsGrid() {
         {
             title: "Wearify FYP (In Process)",
             description: "A Virtual try-on project , user can signup & signin and get free 120 points , 40 points per image generate , Authentication & Authorization is done ...",
-            image: "/images/projects/werify2.png",
+            image: "/images/projects/image.png",
             tech: ["MENN", "Python", "Vercel", "render"],
             link: "https://wearify-mu.vercel.app/",
             video: null,

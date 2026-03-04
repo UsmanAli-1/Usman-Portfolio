@@ -79,7 +79,7 @@ export default function Header() {
                 </div>
               </Link>
             );
-          })}
+          })} 
         </nav>
 
         {/* Right icons */}

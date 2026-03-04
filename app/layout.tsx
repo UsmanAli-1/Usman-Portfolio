@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
+import CvDownloadButton from "@/components/CvDownloadButton";
 config.autoAddCss = false;
 
 const geistSans = Geist({
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
   description: "Portfolio of a Full Stack Developer",
 };
 
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
@@ -39,7 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         {children}
 
-        <a
+        {/* <a
           href="/Usman-Ali-FullStack_CV.pdf"
           download
           className="fixed bottom-6 right-6 w-14 h-14 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center 
@@ -47,7 +49,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           title="Download Resume"
         >
           <FontAwesomeIcon icon={faFileAlt} className="text-white text-md" />
-        </a>
+        </a> */}
+        <CvDownloadButton />
       </body>
     </html>
   );
