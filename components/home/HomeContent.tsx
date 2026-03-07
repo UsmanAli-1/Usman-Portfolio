@@ -51,7 +51,7 @@ export default function HomeContent() {
                 <Animate type="fade-up">
                     <div className="w-[300px] text-base text-white/60 leading-relaxed mx-auto 
                 md:w-auto md:text-2xl md:max-w-3xl md:mt-105 mt-80" >
-                        Crafting modern web and Saas experiences with MENN, Php , and Python
+                        Crafting modern web and Saas experiences with MERN , Next.js , Php , and Python
                     </div>
                 </Animate>
 
@@ -111,8 +111,8 @@ export default function HomeContent() {
             hover:border-white/40 hover:bg-white/7 hover:scale-105 transition-all duration-300
              ">
                                 <FontAwesomeIcon icon={faLayerGroup} className="text-3xl mb-4" />
-                                <h3 className="text-xl font-semibold mb-2">MENN Stack</h3>
-                                <p className="text-white/60 text-md font-extralight">Full-stack javascript development with MongoDB , Express, Next.js , and  Node.js.</p>
+                                <h3 className="text-xl font-semibold mb-2">MERN Stack</h3>
+                                <p className="text-white/60 text-md font-extralight">Full-stack javascript development with MongoDB , Express, React.js , and  Node.js.</p>
                             </div>
                         </Animate>
 
