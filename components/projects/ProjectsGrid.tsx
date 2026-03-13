@@ -18,8 +18,8 @@ export default function ProjectsGrid() {
     const projects = [
         {
             title: "Wearify FYP (In Process)",
-            description: "A Virtual try-on project , user can signup & signin and get free 120 points , 40 points per image generate , Authentication & Authorization is done ...",
-            image: "/images/projects/image.png",
+            description: "A 2D virtual try-on platform where users upload their photo, try garments on their image, and receive AI outfit suggestions based on body type and skin tone.",
+            image: "/images/projects/wearify.png",
             tech: ["MENN", "Python", "Vercel", "render"],
             link: "https://wearify-mu.vercel.app/",
             video: null,
