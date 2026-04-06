@@ -25,17 +25,26 @@ export default function ProjectsGrid() {
       description:
         "A 2D virtual try-on platform where users upload their photo, try garments on their image, and receive AI outfit suggestions based on body type and skin tone.",
       image: "/images/projects/wearify3.png",
-      tech: ["MENN", "Python", "Vercel", "render"],
+      tech: ["MERN", "Next.js", "Python", "render"],
       link: "https://wearify-mu.vercel.app/",
       video: null,
     },
     {
       title: "Fitness Checker ML Project",
       description:
-        "ML project predicting fitness performance classes (A–D) using some fitness attributes trained on Korean military fitness dataset , deployed on streamlit ...",
+        "ML project predicting fitness performance classes (A–D) using some fitness attributes trained on Korean military fitness dataset , deployed on streamlit .",
       image: "/images/projects/fitnessChecker.png",
       tech: ["Python", "ML", "XGBoost", "Streamlit"],
       link: "https://body-performance-ml.streamlit.app/",
+      video: null,
+    },
+    {
+      title: "Campaign Intelligent Platform ",
+      description:
+        "Built a full-stack campaign platform with React KPI dashboard, AI creative brief builder, JWT REST API — using mock data to simulate Claude API integration .",
+      image: "/images/projects/campaign.png",
+      tech: ["React", "PostgreSQL", "Node", "Claude"],
+      link: "https://campaign-platform-ai.vercel.app/",
       video: null,
     },
     {

@@ -8,7 +8,7 @@ import {
   faFolder,
   faEnvelope,
 } from "@fortawesome/free-regular-svg-icons";
-import { faGit, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faXmark, faPhone } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -85,7 +85,7 @@ export default function Header() {
         {/* Right icons */}
         <nav className="flex items-center gap-3">
           <Link href="https://github.com/UsmanAli-1" className="px-2 hover:underline">
-            <FontAwesomeIcon icon={faGit} style={{ width: 18 }} />
+            <FontAwesomeIcon icon={faGithub} style={{ width: 18 }} />
           </Link>
           <Link href="https://www.linkedin.com/in/usman-ali-84829130a/" className="px-2 hover:underline">
             <FontAwesomeIcon icon={faLinkedinIn} style={{ width: 14 }} />

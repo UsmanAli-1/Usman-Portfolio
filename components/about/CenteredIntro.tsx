@@ -47,7 +47,7 @@ export default function CenteredIntroAndJourney() {
 
                         <ul className="list-disc pl-8 space-y-2 text-white text-lg">
                             <li className="text-left">
-                                **MENN Stack** (MongoDB, Express.js, Next, Node.js)
+                                **MERN Stack** (MongoDB, Express.js, React, Node.js) / Next.js 
                             </li>
                             <li className="text-left">
                                 **Php & jQuery** for handling backend using php and jQuery
