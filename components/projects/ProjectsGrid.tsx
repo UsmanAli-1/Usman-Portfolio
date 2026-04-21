@@ -24,8 +24,8 @@ export default function ProjectsGrid() {
       title: "Wearify FYP (In Process)",
       description:
         "A 2D virtual try-on platform where users upload their photo, try garments on their image, and receive AI outfit suggestions based on body type and skin tone.",
-      image: "/images/projects/wearify3.png",
-      tech: ["MERN", "Next.js", "Python", "render"],
+      image: "/images/projects/wearify.png",
+      tech: ["MENN", "Fast API","Hugging Face" , "render"],
       link: "https://wearify-mu.vercel.app/",
       video: null,
     },
@@ -42,7 +42,7 @@ export default function ProjectsGrid() {
       title: "Campaign Intelligent Platform ",
       description:
         "Built a full-stack campaign platform with React KPI dashboard, AI creative brief builder, JWT REST API — using mock data to simulate Claude API integration .",
-      image: "/images/projects/campaign.png",
+      image: "/images/projects/Campaign.png",
       tech: ["React", "PostgreSQL", "Node", "Claude"],
       link: "https://campaign-platform-ai.vercel.app/",
       video: null,
