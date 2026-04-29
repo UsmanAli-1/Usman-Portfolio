@@ -24,7 +24,7 @@ export default function ProjectsGrid() {
       title: "AI-Powered Virtual Try-On - FYP ",
       description:
         "A 2D virtual try-on platform where users upload their photo, try garments on their image, and receive AI outfit suggestions based on body type and skin tone.",
-      image: "/images/projects/Wearify.png",
+      image: "/images/projects/WearifyNew.png",
       tech: ["MENN", "Fast API","Hugging Face" , "render"],
       link: "https://wearify-mu.vercel.app/",
       video: null,
